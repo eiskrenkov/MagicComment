@@ -1,0 +1,12 @@
+{
+    "comments": [
+        {
+            "text": "# frozen_string_literal: true\n\n",
+            "line": 0,
+            "files": {
+                "include": ["*.rb", "Gemfile", "Rakefile", "config.ru"],
+                "exclude": ["schema.rb"]
+            }
+        }
+    ]
+}
