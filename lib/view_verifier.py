@@ -19,8 +19,8 @@ class ViewVerifier:
 
         return self.__file_name_listed(file_name, self.settings.included())
 
-    def __file_name_listed(self, file_name, list):
-        for element in list:
+    def __file_name_listed(self, file_name, array):
+        for element in array:
             if file_name == element or (element.startswith(self.WILDCARD) and file_name.endswith(element[1:])):
                 return True
 

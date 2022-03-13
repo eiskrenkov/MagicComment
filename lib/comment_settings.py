@@ -1,6 +1,6 @@
 class CommentSettings:
     def __init__(self, settings):
-       self.settings = settings
+        self.settings = settings
 
     def text(self):
         return self.settings.get("text")
