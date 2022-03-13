@@ -8,12 +8,17 @@ class CommentSettings:
         text = self.settings.get("text")
 
         if not text:
-            raise CommentMisconfigError("Text")
+            raise CommentMisconfigError("Text", "must be filled")
 
         return text + "\n"
 
     def line(self):
-        return self.settings.get("line", 0)
+        line = self.settings.get("line", 0)
+
+        if line < 1:
+            raise CommentMisconfigError("Line", "should be greater than or equal to 1")
+
+        return line
 
     def blank_lines(self):
         return self.settings.get("blank_lines", 0)

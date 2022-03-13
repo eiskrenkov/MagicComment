@@ -6,5 +6,5 @@ class Error(Exception):
         sublime.error_message(message)
 
 class CommentMisconfigError(Error):
-    def __init__(self, attribute):
-        super().__init__(f"{attribute} attribute is misconfigured for the comment")
+    def __init__(self, attribute, explanation):
+        super().__init__(f"Comment is misconfigured! {attribute} {explanation}")

@@ -15,5 +15,7 @@ class MagicCommentInsertCommand(sublime_plugin.TextCommand):
                 self.__insert_comment(edit, comment_settings)
 
     def __insert_comment(self, edit, comment_settings):
+        line_number = self.view.text_point(comment_settings.line() - 1, 0)
         comment_text = comment_settings.text() + ("\n" * comment_settings.blank_lines())
-        self.view.insert(edit, comment_settings.line(), comment_text)
+
+        self.view.insert(edit, line_number, comment_text)

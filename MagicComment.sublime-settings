@@ -3,7 +3,7 @@
     "comments": [
         {
             "text": "# frozen_string_literal: true",
-            "line": 0,
+            "line": 1,
             "blank_lines": 1,
             "files": {
                 "include": ["*.rb", "Gemfile", "Rakefile", "config.ru"],
