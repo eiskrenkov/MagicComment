@@ -1,5 +1,22 @@
 {
+    // Controls, whether comments should be inserted automatically on file save, or not. If disabled, you can still
+    // use the plugin via command palette, or key bindings
+    //
     "run_on_save": true,
+
+    // The main configuration section. You can add as many comments as you want, for any file name/extension.
+    //
+    // Text - Text of the comment to insert
+    // Line - Number of the line you wish to insert the comment
+    // Blank Lines - Amount of blank lines to insert after the comment
+    // Files
+    //     Include - File names and extensions to insert comments for
+    //     Exclude - File names and extensions you want to ignore. Useful in cases, if some files in your project are
+    //               autogenetated
+    //
+    // Note, that Include and Exclude arrays support wildcards for file extensions via '*'. E.g *.rb mathes all Ruby
+    // files, *.py - all Python files and so on
+    //
     "comments": [
         {
             "text": "# frozen_string_literal: true",

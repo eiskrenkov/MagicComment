@@ -13,7 +13,7 @@ class CommentSettings:
         return text + "\n"
 
     def line(self):
-        line = self.settings.get("line", 0)
+        line = self.settings.get("line", 1)
 
         if line < 1:
             raise CommentMisconfigError("Line", "should be greater than or equal to 1")
