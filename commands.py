@@ -10,7 +10,10 @@ class MagicCommentInsertCommand(sublime_plugin.TextCommand):
 
         for raw_comment_settings in settings.get("comments", []):
             comment_settings = CommentSettings(raw_comment_settings)
-            view_verifier = ViewVerifier(self.view, comment_settings)
 
-            if view_verifier.should_run():
-                self.view.insert(edit, comment_settings.line(), comment_settings.text())
+            if ViewVerifier(self.view, comment_settings).should_run():
+                self.__insert_comment(edit, comment_settings)
+
+    def __insert_comment(self, edit, comment_settings):
+        comment_text = comment_settings.text() + ("\n" * comment_settings.blank_lines())
+        self.view.insert(edit, comment_settings.line(), comment_text)

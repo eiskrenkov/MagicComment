@@ -3,6 +3,7 @@
         {
             "text": "# frozen_string_literal: true",
             "line": 0,
+            "blank_lines": 1,
             "files": {
                 "include": ["*.rb", "Gemfile", "Rakefile", "config.ru"],
                 "exclude": ["schema.rb"]
