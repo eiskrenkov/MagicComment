@@ -1,0 +1,42 @@
+[
+    {
+        "id": "preferences",
+        "children": [
+            {
+                "id": "package-settings",
+                "children": [
+                    {
+                        "caption": "MagicComment",
+                        "children": [
+                            {
+                                "caption": "Settings",
+                                "command": "edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/MagicComment/MagicComment.sublime-settings",
+                                    "default": "{\n\t$0\n}\n"
+                                }
+                            },
+                            {
+                                "caption": "-"
+                            },
+                            {
+                                "caption": "Readme",
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/MagicComment/README.md"
+                                }
+                            },
+                            {
+                                "caption": "Report a bug",
+                                "command": "open_url",
+                                "args": {
+                                    "url": "https://github.com/eiskrenkov/MagicComment/issues"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
