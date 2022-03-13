@@ -1,15 +1,16 @@
 import sublime
 import sublime_plugin
 
-from .lib import comment_settings
-from .lib import view_verifier
+from .lib.comment_settings import CommentSettings
+from .lib.view_verifier import ViewVerifier
 
-class MagicCommentCommand(sublime_plugin.TextCommand):
+class MagicCommentInsertCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         settings = sublime.load_settings("MagicComment.sublime-settings")
 
-        for object in settings.get("comments", []):
-            comment_settings = CommentSettings(object)
+        for raw_comment_settings in settings.get("comments", []):
+            comment_settings = CommentSettings(raw_comment_settings)
+            view_verifier = ViewVerifier(self.view, comment_settings)
 
-            if ViewVerifier(self.view, comment_settings).should_run():
+            if view_verifier.should_run():
                 self.view.insert(edit, comment_settings.line(), comment_settings.text())
