@@ -1,0 +1,8 @@
+[
+    {
+        "keys": [
+            "ctrl+alt+c"
+        ],
+        "command": "magic_comment_insert"
+    }
+]

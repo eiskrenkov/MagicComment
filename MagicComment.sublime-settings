@@ -1,4 +1,5 @@
 {
+    "run_on_save": true,
     "comments": [
         {
             "text": "# frozen_string_literal: true",

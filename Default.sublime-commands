@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "MagicComment: Insert Comments",
+        "command": "magic_comment_insert"
+    }
+]
