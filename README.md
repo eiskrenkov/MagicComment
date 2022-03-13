@@ -13,12 +13,14 @@ Development is motivated by `frozen_string_literal` comment for Ruby files, but 
 - `git clone https://github.com/eiskrenkov/MagicComment.git`
 
 ## Usage
-- **On file save** (enabled by default, can be disabled in settings)
-- **Key Bindings** - Default binging is `CMD+CTRL+C` (can be reconfigured)
+- **On file save** - Enabled by default, can be disabled in settings
+- **Key Bindings** - Commented by default, can be configured to anything you want
 - **Command Palette** - `CMD+P` and type `MagicComment` (or just `comment`) and select `MagicComment: Insert Comments`
 
+> You can always configure key bindings at _Sublime Text menu_ -> _Preferences_ -> _Package Settings_ -> _MagicComment_ -> _Key Bindings_
+
 ## Default Configuration
-Remember, that you can always reconfigure it, just open _Sublime Text menu_ -> _Preferences_ -> _Package Settings_ -> _MagicComment_ -> _Settings_
+> Remember, that you can always reconfigure it, just open _Sublime Text menu_ -> _Preferences_ -> _Package Settings_ -> _MagicComment_ -> _Settings_
 
 ### General
 - `run_on_save`

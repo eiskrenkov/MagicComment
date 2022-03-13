@@ -17,6 +17,14 @@
                                 }
                             },
                             {
+                                "caption": "Key Bindings",
+                                "command": "edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/MagicComment/Default (${platform}).sublime-keymap",
+                                    "default": "// Key Bindings - User\n[\n\t$0\n]\n"
+                                }
+                            },
+                            {
                                 "caption": "-"
                             },
                             {
