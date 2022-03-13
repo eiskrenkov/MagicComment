@@ -1,7 +1,7 @@
 {
     "comments": [
         {
-            "text": "# frozen_string_literal: true\n\n",
+            "text": "# frozen_string_literal: true",
             "line": 0,
             "files": {
                 "include": ["*.rb", "Gemfile", "Rakefile", "config.ru"],
