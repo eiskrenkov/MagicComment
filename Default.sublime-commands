@@ -2,5 +2,21 @@
     {
         "caption": "MagicComment: Insert Comments",
         "command": "magic_comment_insert"
+    },
+    {
+        "caption": "Preferences: MagicComment Settings",
+        "command": "edit_settings",
+        "args": {
+            "base_file": "${packages}/MagicComment/MagicComment.sublime-settings",
+            "default": "// MagicComment Settings - User\n{\n\t$0\n}\n"
+        }
+    },
+    {
+        "caption": "Preferences: MagicComment Key Bindings",
+        "command": "edit_settings",
+        "args": {
+            "base_file": "${packages}/MagicComment/Default (${platform}).sublime-keymap",
+            "default": "// Key Bindings - User\n[\n\t$0\n]\n"
+        }
     }
 ]
