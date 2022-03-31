@@ -8,6 +8,9 @@ Development is motivated by `frozen_string_literal` comment for Ruby files, but 
 
 ## Installation
 
+### Package Control
+MagicComment is available at [Package Control]. Just select `Package Control: Install Package` in Sublime command palette and search for `MagicComment`
+
 ### Manual Installation
 - `cd <Packages directory>` (macOS: `~/Library/Application\ Support/Sublime\ Text/Packages`)
 - `git clone https://github.com/eiskrenkov/MagicComment.git`
@@ -69,4 +72,4 @@ Development is motivated by `frozen_string_literal` comment for Ruby files, but 
 ## Contribution
 Issues and pull requests are highly welcome!
 
-[Package Control]: https://packagecontrol.io
+[Package Control]: https://packagecontrol.io/packages/MagicComment
